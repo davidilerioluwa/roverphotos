@@ -1,0 +1,194 @@
+body{
+    background-color: whitesmoke;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header header header header' 
+    'right main main main'    
+   'footer footer footer footer';
+}
+.header{
+    grid-area: header;
+    
+    height: 50px;
+    background-color: rgb(2, 156, 156);
+    display: flex;
+    /* position: fixed; */
+     margin-top: -5px;
+    width: 100%;
+    z-index: 4;
+    
+}
+.right{
+    grid-area: right;
+    /* width: 250px;
+    background-color: white;
+   position: fixed;
+   margin-top: 75px;
+   height: 80vw; */
+}
+.main{
+    grid-area: main;
+   background-color: blue;
+    /* margin-top: 200px; */
+    /* position: relative;
+    z-index: -1; */
+  
+ 
+}
+
+.footer{
+    grid-area: footer;
+    background-color: yellow;
+    
+}
+
+
+
+  a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 20px; 
+    margin-left: 30px;
+  }
+  #header-end{
+    margin-left: auto;
+  }
+  .right-header{
+    background-color: rgba(24, 12, 196, 0.322);
+    color: white;
+    
+    border-radius: 10%;
+    margin-right: 20px;
+    padding: 10px;
+    height: 15px;
+    align-self: center;
+    
+  }
+  a:hover,button:hover{
+    background-color: teal;
+  }
+
+figure{
+    border: 0.5px grey solid;
+    margin-top: auto;
+    margin-top: 20px;
+}
+.img{
+    
+    width: 500px;
+    height: 500px;
+    
+    
+}
+.img:hover{
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+}
+.actions{
+    background-color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+    filter: brightness(200%);
+   
+}
+i{
+    margin: auto;
+ 
+    font-size: 30px;
+    justify-self: center;
+     cursor: pointer;
+ }
+ .poster{
+     display: flex;
+     height: 60px;
+ }
+ .poster>img{
+    margin-top: 5px;
+     border-radius: 100%;
+height: 40px;
+     width: 10%;
+ }
+ .poster>div{
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     margin-top: 5px;
+ }
+ h3{
+     margin-top: 1px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .poster>div>span{
+     font-size: small;
+     margin-top: -60px;
+ }
+ .fa-heart{
+    color: red;
+ }
+
+ input[type=date]{
+     width: 200px ;
+     height: 60px;
+     margin-top: 10px;
+     color: white;
+     background-color: teal;
+     border: none;
+     border-radius: 4px;
+     font-size: 20px;
+ }
+
+.right> button[type=submit]{
+     margin-top: 9px;
+     margin-left: 30px;
+     border: none;
+     color: white;
+    text-decoration: none;
+    padding: 10px; 
+    height: 20px;
+    font-size: 16px;
+    padding-bottom: 25px;
+ }
+ button[type=submit]:hover> input[type=date]{
+     display: inline;
+ }
+ /* login */
+ .login{
+     
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    border: 1px rgb(109, 107, 107) solid;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.textinput{
+display: block;
+margin: auto;
+width: 300px;
+margin-top: 20px;
+margin-bottom: 20px;
+height: 30px;
+border: 0.1px rgb(204, 195, 195) solid;
+border-radius: 2px;
+}
+.loginbtn{
+    width: 307px;
+    color: white;
+    border: none;
+    background-color: rgb(233, 19, 37);
+    padding: 10px;
+    margin-top: 10px;
+}
+.loginbtn:hover{
+    background-color: rgb(231, 36, 52);
+}
